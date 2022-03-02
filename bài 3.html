@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.
+    let nums = []
+    let max = 0, vitri = 0,tongTb = 0
+
+    for(let i=0 ;i<5; i++){
+        nums[i] = Number(prompt("Nhập số vào mảng"))
+    }
+    document.write("nums = ["+nums+"]<br>")
+
+    for (let i=0; i<nums.length; i++){
+        if(max< nums[i]){
+            max = nums[i]
+            vitri = i
+        }
+        tongTb += nums[i]
+    }
+    tongTb = tongTb/nums.length
+
+    document.write("Phần tử lớn nhất trong mảng là "+ max + " tại vị trí mảng số["+vitri+"]<br>")
+    document.write("Tổng trung bình của các số là "+tongTb)
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // - Viết chương trình đếm số nguyên âm trong một chuỗi
+    let mangso = [], mangsoam = []
+
+    for (let i = 0; i < 5; i++) {
+        mangso[i] = Number(prompt("Nhập số vào mảng"))
+        if (mangso[i]<0){
+            mangsoam.push(mangso[i])
+        }
+    }
+    document.write("mangso = ["+mangso+"]<br>")
+    document.write("Mảng các số nguyên gồm "+mangsoam.length +" phần tử mảng số nguyên âm = ["+mangsoam+"]<br>")
+</script>
+</body>
+</html>
